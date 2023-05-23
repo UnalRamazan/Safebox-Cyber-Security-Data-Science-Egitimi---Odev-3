@@ -1,0 +1,5 @@
+SELECT müşteri_id, müşteri_adı, SUM(satis_miktari) AS toplam_gelir
+FROM satis_tablosu
+GROUP BY müşteri_id, müşteri_adı
+ORDER BY toplam_gelir DESC
+LIMIT 10;
