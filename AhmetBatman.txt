@@ -1,1 +1,20 @@
+analitik sql veri tabanı sorgularından yararlanarak, büyük veri setlerinden işe yarar anlamlı bilgiler çıkarabilmek için kullanılan bir yöntemdir. Bu yöntem karmaşık sorgular, veri işleme, filtreleme ve birleştirme gibi pek çok analitik işlemleri gerçekleştirir.
+örnek vericek olursak;
+toplam satış hesaplaması
+- SELECT SUM(sales_amount) AS total_sales
+FROM sales_table;
+en çok satılan ürünlerin listesi
+- SELECT product_name, SUM(quantity) AS total_quantity
+FROM sales_table
+GROUP BY product_name
+ORDER BY total_quantity DESC
+LIMIT 10;
+İlişili verileri birleştirme
+-SELECT customers.customer_name, orders.order_date, order_items.product_name
+FROM customers
+JOIN orders ON customers.customer_id = orders.customer_id
+JOIN order_items ON orders.order_id = order_items.order_id
+WHERE customers.country = 'USA';
+
+
 
