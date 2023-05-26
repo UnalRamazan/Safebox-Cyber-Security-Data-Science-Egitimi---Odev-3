@@ -1,3 +1,6 @@
+
+Creeper virüsü 1970 yıllarında geliştirilen ve dünyanın ilk bilgisayar ağı olan arpanet üzerinden diğer sistemler yayılan bir programdır. Bu progam kendi kendine çoğalan ve sistemleri etkileyen bir virüsdür. Bu virüsle birlikte birçok kötü yazılımın temelleri atılmıştır. Mantığı ise bulaştığı sistemin kaynaklarını kullanarak kendini çoğaltmak ve diğer sistemlere yayılmaktır. Bulaştığı sistemle yeterli kalmayıp ağ üzerinden de işlevini sürdürebilir. Bulaştığı sistemde I'm the creeper, catch me if you can!" (Ben creeper'ım, beni yakalayabilir misin?) yazar. Ardından da takipçisi olan Reaper onu temizleme işlevi görür. Bu virüs günümüzdek virüslere göre daha temizdir. Nedeni ise günümüzdeki programlar kendini gizleyebilme gibi yeteneklere sahiptir Creeper ise buna gerek duymaz.
+
 analitik sql veri tabanı sorgularından yararlanarak, büyük veri setlerinden işe yarar anlamlı bilgiler çıkarabilmek için kullanılan bir yöntemdir. Bu yöntem karmaşık sorgular, veri işleme, filtreleme ve birleştirme gibi pek çok analitik işlemleri gerçekleştirir.
 örnek vericek olursak;
 toplam satış hesaplaması
@@ -15,6 +18,4 @@ FROM customers
 JOIN orders ON customers.customer_id = orders.customer_id
 JOIN order_items ON orders.order_id = order_items.order_id
 WHERE customers.country = 'USA';
-
-
 
